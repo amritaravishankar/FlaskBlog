@@ -2,9 +2,7 @@ from flask import render_template, request, url_for, flash, redirect, request
 from blog.models import User, Post
 from blog.forms import RegistrationForm, LoginForm
 from blog import app, db, bcrypt
-from flask_login import LoginManager
-from flask_login import LoginManager
-from flask_login import login_user, current_user, logout_user, login_required
+from flask_login import LoginManager, login_user, current_user, logout_user, login_required
 
 posts = [
     {
