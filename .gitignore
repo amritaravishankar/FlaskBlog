@@ -1,5 +1,5 @@
 .vscode/
 .DS_Store
-.flask_blog/pyvenv.cfg
-.flask_blog/bin/
-.flask_blog/lib/
+**/pyvenv.cfg
+**/bin/
+**/lib/
