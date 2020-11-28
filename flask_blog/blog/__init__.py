@@ -2,6 +2,7 @@ from flask import Flask
 from flask_sqlalchemy import SQLAlchemy
 from flask_bcrypt import Bcrypt
 from flask_login import LoginManager
+from flask_mail import Mail
 
 app = Flask(__name__)
 app.config['SECRET_KEY'] = '735d0d18695bfe32c861a12bcde8497f'
@@ -11,5 +12,6 @@ bcrypt = Bcrypt(app)
 login_manager = LoginManager(app)
 login_manager.login_view = 'login' # function name of the route
 login_manager.login_message_category = "info"
+mail = Mail
 
 from blog import routes
