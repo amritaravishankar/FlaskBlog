@@ -5,9 +5,9 @@ The web-application uses SQLite to store users' login information and details of
 
 ## Deployment
 
-Run the following commands:
+Run the following commands after entering the project directory:
 ```
-export FLASK_APP=blog.py
+export FLASK_APP=run.py
 ```
 
 ```
